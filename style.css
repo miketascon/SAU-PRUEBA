@@ -1,0 +1,294 @@
+/*
+ _____  __  __  ____                __                   
+/\___ \/\ \/\ \/\  _`\             /\ \                  
+\/__/\ \ \ \_\ \ \ \/\_\    ___    \_\ \     __    ____  
+   _\ \ \ \  _  \ \ \/_/_  / __`\  /'_` \  /'__`\ /',__\ 
+  /\ \_\ \ \ \ \ \ \ \L\ \/\ \L\ \/\ \L\ \/\  __//\__, `\
+  \ \____/\ \_\ \_\ \____/\ \____/\ \___,_\ \____\/\____/
+   \/___/  \/_/\/_/\/___/  \/___/  \/__,_ /\/____/\/___/ 
+                                                         
+http://www.jhcodes.com/
+Jesus Herrera - jesuxherrera@jhcodes.com
+*/
+
+@import url("css/font-awesome.min.css");
+@import url("css/responsive.css");
+@import url("css/animate.css");
+
+
+/* Custom HTML Tags */
+
+body{
+  background: url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;	
+}
+
+a{
+	cursor: pointer;
+}
+
+label{
+    color: #777;
+}
+
+/* Custom Styles Bootstrap */
+
+
+
+/* Custom New Styles */
+#loading{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #3a92c4;
+	position: absolute;
+	top: 0;
+	z-index: 20000;
+
+}
+
+
+#shadow{
+	background: rgba(0, 0, 0, 0.5);
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 49000;
+	display: none;
+}
+
+
+.this-option{
+	z-index: 50000;
+}
+
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.account-wall {
+    padding: 10px 0px 14px;
+    background-color: rgba(247, 247, 247, 0.65);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.login-title{
+    display: block;
+    margin: 0px;
+}
+
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+
+#principal{
+	margin-top: 1%;
+}
+
+/* ### MENU ### */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-nav > li {
+    float: left;
+    border-radius: 4px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #FFF;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #FFF;
+    background-color: transparent;
+}
+
+.exit-option{background: #d24726;}
+.exit-option:hover{background: #B02200;}
+.config-option{background: #0072c6;}
+.config-option:hover{background: #005b9e;}
+.last-option{background: #00C6B7;}
+.last-option:hover{background: #069E93;}
+
+
+
+/* ### SIDEBAR ### */
+#sidebar{
+	padding: 2px;
+}
+
+
+/* panels of sidebar */
+.panel-default > .panel-heading {
+color: #FFF;
+border-color: #DDD;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#499bea+0,207ce5+100;Blue+3d+%237 */
+background: rgb(73,155,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(32,124,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-9 */
+
+}
+
+.fa-eye{
+	cursor: pointer;
+}
+
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+#bodysystem{
+	padding: 2px;
+}
+
+
+.panel {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0px solid transparent;
+}
+
+.panel-heading {
+    border-bottom: 0px solid transparent;
+}
+
+
+/* ### ITEMS ### */
+.item-function{
+	display: inline-block;
+	width: 100%;
+	background: #FFF;
+	float: left;
+	border-radius: 4px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+
+/* ### STATUS ### */
+.status{
+	color: #777;
+    padding: 8px 15px 0px;
+}
+
+.time-post{
+    cursor: pointer;
+}
+
+.time-line-post{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+    width: 100%;
+}
+
+.comments{
+    width: 100%;
+    float: left;
+    padding: 5px;
+}
+
+.comments-post{
+    color: #777;
+    padding: 3px 15px 0px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background: #FFF;
+    font-size: 12px;
+}
+
+.label-panel{
+    display: block;
+    text-align: left;
+    padding: 7px;
+    font-size: 14px; 
+}
